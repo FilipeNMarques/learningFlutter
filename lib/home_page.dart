@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_01/app_controller.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -18,17 +19,13 @@ class HomePageState extends State<HomePage> {
           title: Text('Home'),
         ),
         body: Center(
-          child: GestureDetector(
-            child: Text(
-              'Clicado: $counter vezes',
-              style: TextStyle(fontSize: 30),
-            ),
-            onTap: () {
-              setState(() {
-                counter++;
-              });
-            },
-          ),
+          child: Switch(
+              value: AppController.instance.isDarkTheme,
+              onChanged: (value) {
+                setState(() {
+                  AppController.instance.changeTheme();
+                });
+              }),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
