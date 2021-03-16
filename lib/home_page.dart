@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_01/app_controller.dart';
+import 'package:flutter_01/theme_switcher.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -17,15 +18,10 @@ class HomePageState extends State<HomePage> {
     return Scaffold(
         appBar: AppBar(
           title: Text('Home'),
+          actions: [ThemeSwitcher()],
         ),
         body: Center(
-          child: Switch(
-              value: AppController.instance.isDarkTheme,
-              onChanged: (value) {
-                setState(() {
-                  AppController.instance.changeTheme();
-                });
-              }),
+          child: ThemeSwitcher(),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
