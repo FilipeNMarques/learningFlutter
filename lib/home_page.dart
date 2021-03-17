@@ -20,8 +20,145 @@ class HomePageState extends State<HomePage> {
           title: Text('Home'),
           actions: [ThemeSwitcher()],
         ),
-        body: Center(
-          child: ThemeSwitcher(),
+        body: Container(
+          width: double.infinity,
+          height: double.infinity,
+          child: ListView(
+            // mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ThemeSwitcher(),
+              Text('Contador: $counter'),
+              Container(
+                height: 80,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                ],
+              ),
+              SizedBox(height: 120),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                ],
+              ),
+              SizedBox(height: 120),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                ],
+              ),
+              SizedBox(height: 120),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                ],
+              ),
+              SizedBox(height: 120),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                ],
+              ),
+              SizedBox(height: 120),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black12,
+                  ),
+                ],
+              ),
+              SizedBox(height: 120),
+            ],
+          ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
